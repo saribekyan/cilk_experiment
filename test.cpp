@@ -82,7 +82,7 @@ int main(int argc, char** argv) {
     printf("(%d, %d, %d) : %lf\n", workers, (int)separate, exp, (end - start).count() / 1000000.0);
 
     FILE* f = fopen("result.txt", "a");
-    fprintf(f, "(%d, %d, %d) : %lf\n", workers, (int)separate, exp, (end - start).count() / 1000000.0);
+    fprintf(f, "(%d, %d, %d) : %lf,\n", workers, (int)separate, exp, (end - start).count() / 1000000.0);
     return 0;
 }
 
